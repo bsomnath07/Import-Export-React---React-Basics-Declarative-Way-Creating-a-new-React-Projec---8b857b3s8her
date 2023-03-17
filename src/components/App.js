@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Heading from "./components/Heading";
-import SubHeading from "./components/SubHeading";
-import InputQuery from "./components/InputQuery";
-import SubmitButton from "./components/SubmitButton";
-import "./styles/App.css";
+import SubHeading from "./SubHeading";
+import InputQuery from "./InputQuery";
+import SubmitButton from "./SubmitButton";
+import Heading from "./Heading";
+//import "./styles/App.css";
 
 function App() {
   const [query, setQuery] = useState("");
@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div id="main">
-      <Heading />
+    <Heading></Heading>
       <SubHeading />
       <form onSubmit={handleFormSubmit}>
         <InputQuery value={query} onChange={handleQueryChange} />
